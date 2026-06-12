@@ -18,15 +18,15 @@ variables:
   parallel:
     matrix:
       - GCC: 11
-        LLVM: [15.0.7, 16.0.6, 17.0.6, 18.1.8, 19.1.7, 20.1.8, 21.1.4]
+        LLVM: [15.0.7, 16.0.6, 17.0.6, 18.1.8, 19.1.7, 20.1.8, 21.1.4, 22.1.1]
         _CC: clang
         _CXX: clang++
       - GCC: 15
-        LLVM: [21.1.4]
+        LLVM: [22.1.1]
         _CC: clang
         _CXX: clang++
       - GCC: 15
-        LLVM: [21.1.4]
+        LLVM: [22.1.1]
         _CC: gcc
         _CXX: g++
 
@@ -261,15 +261,15 @@ test-cage:
   parallel:
     matrix:
     - GCC: 11
-      LLVM: [16.0.6, 17.0.6, 18.1.8, 19.1.7, 20.1.8, 21.1.4]
+      LLVM: [16.0.6, 17.0.6, 18.1.8, 19.1.7, 20.1.8, 21.1.4, 22.1.1]
       _CC: clang
       _CXX: clang++
     - GCC: 15
-      LLVM: [21.1.4]
+      LLVM: [22.1.1]
       _CC: clang
       _CXX: clang++
     - GCC: 15
-      LLVM: [21.1.4]
+      LLVM: [22.1.1]
       _CC: gcc
       _CXX: g++
   stage: integration-test
@@ -282,15 +282,15 @@ test-cgfcollector:
   parallel:
     matrix:
       - GCC: 11
-        LLVM: [18.1.8, 19.1.7, 20.1.8, 21.1.4]
+        LLVM: [18.1.8, 19.1.7, 20.1.8, 21.1.4, 22.1.1]
         _CC: clang
         _CXX: clang++
       - GCC: 15
-        LLVM: [21.1.4]
+        LLVM: [22.1.1]
         _CC: clang
         _CXX: clang++
       - GCC: 15
-        LLVM: [21.1.4]
+        LLVM: [22.1.1]
         _CC: gcc
         _CXX: g++
   stage: integration-test
